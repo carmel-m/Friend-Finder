@@ -6,23 +6,20 @@ var friendArray = require("../data/friends.js")
 module.exports = function(app) {
 
 
-
 // Displays all friends
 app.get("/api/friends", function(req, res) {
-    return res.json(friends);
+    return res.json(friendArray);
   });
 
 
 
   
-// // POST route to handle incoming survey results & 
+// POST route to handle incoming survey results & do compatibility logic with a for loop
+//     loop over friends array
+//       inside that loop, loop over friends[i].surveyResponsesArray
+//       compare each survey response with the survey response of the user
+//       keep a running total
 
-// do compatibility logic with a for loop
-
-    // loop over friends array
-      // inside that loop, loop over friends[i].surveyResponsesArray
-      //compare each survey response with the survey response of the user
-      //keep a running total
 
 
 

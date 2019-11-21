@@ -129,7 +129,7 @@ var friendArray = [
         ]
     },
     {
-        "name": "Lindsey Funke",
+        "name": "Lindsay Bluth Funke",
         "photo": "",
         "scores": [
             "1", 
