@@ -19,10 +19,12 @@ app.get("/api/friends", function(req, res) {
 
 // do compatibility logic with a for loop
 
-// loop over friends Array
-    // inside that loop, loop over friends[i].
+    // loop over friends array
+      // inside that loop, loop over friends[i].surveyResponsesArray
+      //compare each survey response with the survey response of the user
+      //keep a running total
 
-    
+
 
 // app.post("/api/friends", function(req, res) {
 //     // req.body hosts is equal to the JSON post sent from the user

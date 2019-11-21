@@ -1,0 +1,31 @@
+.jumbotron {
+    background-color: rgb(245, 146, 33);
+    font-family: 'Bowlby One SC', cursive;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.card {
+    margin: 40px;
+}
+
+.card-header {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* font-family: 'Bowlby One SC', cursive;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Staatliches', cursive; */
