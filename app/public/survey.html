@@ -308,11 +308,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
-
+<p id=bestFriendName></p>
+<img>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+ 
                 </div>
             </div>
         </div>
@@ -339,11 +340,22 @@
 
             console.log(newFriend);
 
+            $("#bestMatchModal").modal("show");
+
             //   TOGGLE POST ROUTE/SEND THE NEW OBJECT TO THE FRIENDS API
             $.post("/api/friends", newFriend, function (data) {
                 console.log("data sent!");
 
             });
+
+            // NEED TO GET BACK BEST FRIEND FROM APIROUTES?
+
+            // $.get("/api/friends", bestFriend, function (data) {
+
+            //     console.log("message");
+
+            // });
+
         });
 
     </script>

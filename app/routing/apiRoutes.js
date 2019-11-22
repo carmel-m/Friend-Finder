@@ -45,7 +45,7 @@ module.exports = function(app) {
     // that will be the person that answered the question the closest
 
     var bestFriend = friendData[bestFriendIndex];
-    console.log(bestFriend);
+    console.log(bestFriend.name);
 
   });
 };
