@@ -1,5 +1,3 @@
-//LOAD DATA
-
 var friendData = require("../data/friends.js");
 
 module.exports = function(app) {
@@ -34,7 +32,7 @@ module.exports = function(app) {
       friendDiff.push(totalDiff);
     }
 
-    // find index of friendDiff with the small value
+    // find index of friendDiff with the smallest value
     var min = Infinity;
     for (var k = 0; k < friendDiff.length; k++) {
       if (friendDiff[k] < min) {
@@ -42,17 +40,10 @@ module.exports = function(app) {
       }
     }
     var bestFriendIndex = friendDiff.indexOf(min);
-    // that will be the person that answered the question the closest
 
     var bestFriend = friendData[bestFriendIndex];
     console.log(bestFriend.name);
 
   });
 };
-// end of requests
 
-
-
-
-// 7. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
-//    * The modal should display both the name and picture of the closest match.
