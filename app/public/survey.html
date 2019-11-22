@@ -26,14 +26,14 @@
         <div class="card-header">ABOUT YOU</div>
         <div class="card-body">
             <!-- <form class="container border"> -->
-                <div class="form-group">
-                    <label for="nameInput">Name (required)</label>
-                    <input type="text" class="form-control" id="name-input" placeholder="" required>
-                </div>
-                <div class="form-group">
-                    <label for="picInput">Link to photo (required)</label>
-                    <input type="text" class="form-control" id="pic-input" placeholder="" required>
-                 </div>
+            <div class="form-group">
+                <label for="nameInput">Name (required)</label>
+                <input type="text" class="form-control" id="name-input" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="picInput">Link to photo (required)</label>
+                <input type="text" class="form-control" id="pic-input" placeholder="" required>
+            </div>
             <!-- </form> -->
         </div>
     </div>
@@ -45,7 +45,6 @@
         <div class="card-body">
             <h5 class="card-title">For each question below, select the option that you feel describes you the best.</h5>
             <br>
-            <!-- <form class="container border">  -->
             <!-- Question 1 -->
             <label for="input1">Q1. I believe in working hard and earning my own money.</label><br>
             <div class="btn-group">
@@ -54,7 +53,9 @@
                     Select an option
                 </button>
                 <div class="dropdown-menu">
-                    <button class="dropdown-item" type="button">1 | strongly disagree</button>
+
+                    <!-- can i do it this way? if i add IDs, can they be used for every question? -->
+                    <button class="dropdown-item" type="button" id="one">1 | strongly disagree</button>
                     <button class="dropdown-item" type="button">2 | somewhat disagree</button>
                     <button class="dropdown-item" type="button">3 | neutral</button>
                     <button class="dropdown-item" type="button">4 | somewhat agree</button>
@@ -207,13 +208,66 @@
                 </div>
             </div>
             <hr>
-            <button id="submit-button" class="btn btn-dark">Find my new friend!</button>
-            <!-- </form>  -->
+            <button id="submit-button" class="btn btn-dark" data-toggle="modal" data-target="#modal">Find my new friend!</button>
+        </div>
+    </div>
+
+    <!-- Modal - FIX -->
+    <div class="modal fade" id="bestMatchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
     </div>
 
 
-<!-- Bootstrap/jQuery -->
+
+    <script type="text/javascript">
+
+
+        // CAPTURE VALUE OF WITH ON CLICK - NOT WORKING
+        $("#submit-button").on("click", function (event) {
+            event.preventDefault();
+            console.log("button clicked");
+
+            var newFriend = {
+                name: $("#name-input").val().trim(),
+                photo: $("#pic-input").val().trim(),
+                
+                // HOW TO CAPTURE VALUE OF SCORES??
+                // scores: $("#").val().trim(),
+            };
+            
+
+            //   TOGGLE POST ROUTE/SEND THE NEW OBJECT TO THE FRIENDS API
+            // $.post("/api/friends", newFriend)
+            //     .then(function (data) {
+            //         console.log(data);
+
+                });
+        // });
+
+
+
+    </script>
+
+
+
+    <!-- Bootstrap/jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

@@ -1,4 +1,4 @@
-// 5. You should save your application's data inside of `app/data/friends.js` as an array of objects. Each of these objects should roughly follow the format below.
+
 
 // 6. Determine the user's most compatible friend using the following as a guide:
 
@@ -162,42 +162,5 @@ var friendArray = [
     }
 ]
 
-
-
-
-var newFriend = 
-{
-        "name": "Maeby Funke",
-        "photo": "",
-        "scores": [
-            "2", 
-            "3", 
-            "2", 
-            "4",
-            "3",
-            "3",
-            "2",
-            "1",
-            "3",
-            "5"
-        ]
-    }
-
-
-    var friendDiff = []
-    // for loop that looks at each friend in the friend array
-    for (var i = 0; i < friendArray.length; i++) {
-        var totalDiff = 0;
-        // inner for loop will look at the scores of each friend
-        // as we loop through the friend array
-        for (var j = 0; j < friendArray[i].scores.length; j++) {
-            var diff = Math.abs(parseInt(newFriend.scores[j]) - parseInt(friendArray[i].scores[j]));
-            totalDiff += diff;
-        }
-        friendDiff.push(totalDiff);
-    }
-    // console.log("3" - "1")
-    // find index of friendDiff with the small value
-    // that will be the person that answered the question the closest
 
 module.exports = friendArray;
