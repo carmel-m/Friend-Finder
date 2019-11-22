@@ -25,7 +25,6 @@
     <div class="card">
         <div class="card-header">ABOUT YOU</div>
         <div class="card-body">
-            <!-- <form class="container border"> -->
             <div class="form-group">
                 <label for="nameInput">Name (required)</label>
                 <input type="text" class="form-control" id="name-input" placeholder="" required>
@@ -34,27 +33,280 @@
                 <label for="picInput">Link to photo (required)</label>
                 <input type="text" class="form-control" id="pic-input" placeholder="" required>
             </div>
-            <!-- </form> -->
         </div>
     </div>
 
     <!-- SURVEY FORM -->
-    <!-- need to make answering each question a requirement -->
     <div class="card">
         <div class="card-header">SURVEY QUESTIONS</div>
         <div class="card-body">
             <h5 class="card-title">For each question below, select the option that you feel describes you the best.</h5>
             <br>
+
+            <!-- RADIO OPTION -->
+
+            <div class="one">
+                <h6>Q1. I believe in working hard and earning my own money</h6>
+                <label class="container">
+                    <input type="radio" checked="checked" id="oneA" name="radio1" required=""> 1 | strongly disagree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="oneB" name="radio1" required=""> 2 | somewhat disagree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="oneC" name="radio1" required=""> 3 | neutral
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="oneD" name="radio1" required=""> 4 | somewhat agree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="oneE" name="radio1" required=""> 5 | strongly agree
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <hr>
+
+            <div class="two">
+                <h6>Q2. I often say inappropriate things.</h6>
+                <label class="container">
+                    <input type="radio" checked="checked" id="twoA" name="radio2" required=""> 1 | strongly disagree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="twoB" name="radio2" required=""> 2 | somewhat disagree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="twoC" name="radio2" required=""> 3 | neutral
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="twoD" name="radio2" required=""> 4 | somewhat agree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="twoE" name="radio2" required=""> 5 | strongly agree
+                    <span class="checkmark"></span>
+                </label>
+                <hr>
+            </div>
+
+            <div class="three">
+                <h6>Q3. People consider me young at heart.</h6>
+                <label class="container">
+                    <input type="radio" checked="checked" id="threeA" name="radio3" required=""> 1 | strongly disagree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="threeB" name="radio3" required=""> 2 | somewhat disagree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="threeC" name="radio3" required=""> 3 | neutral
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="threeD" name="radio3" required=""> 4 | somewhat agree
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" id="threeE" name="radio3" required=""> 5 | strongly agree
+                    <span class="checkmark"></span>
+                </label>
+                <hr>
+            </div>
+
+            <h6>Q4. I often feel the need to teach people lessons, even if they're harsh
+                ones.</h6>
+            <label class="container">
+                <input type="radio" checked="checked" name="radio4" required=""> 1 | strongly disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio4" required=""> 2 | somewhat disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio4" required=""> 3 | neutral
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio4" required=""> 4 | somewhat agree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio4" required=""> 5 | strongly agree
+                <span class="checkmark"></span>
+            </label>
+            <hr>
+
+            <h6>Q5. I have an appreciation for magic tricks and illusions.</h6>
+            <label class="container">
+                <input type="radio" checked="checked" name="radio5" required=""> 1 | strongly disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio5" required=""> 2 | somewhat disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio5" required=""> 3 | neutral
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio5" required=""> 4 | somewhat agree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio5" required=""> 5 | strongly agree
+                <span class="checkmark"></span>
+            </label>
+            <hr>
+
+            <h6>Q6. I have a flair for the theatrical.</h6>
+            <label class="container">
+                <input type="radio" checked="checked" name="radio6" required=""> 1 | strongly disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio6" required=""> 2 | somewhat disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio6" required=""> 3 | neutral
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio6" required=""> 4 | somewhat agree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio6" required=""> 5 | strongly agree
+                <span class="checkmark"></span>
+            </label>
+            <hr>
+
+            <h6>Q7. Other people consider me to be reliable.</h6>
+            <label class="container">
+                <input type="radio" checked="checked" name="radio7" required=""> 1 | strongly disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio7" required=""> 2 | somewhat disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio7" required=""> 3 | neutral
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio7" required=""> 4 | somewhat agree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio7" required=""> 5 | strongly agree
+                <span class="checkmark"></span>
+            </label>
+            <hr>
+
+            <h6>Q8. I believe family should always come first.</h6>
+            <label class="container">
+                <input type="radio" checked="checked" name="radio8" required=""> 1 | strongly disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio8" required=""> 2 | somewhat disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio8" required=""> 3 | neutral
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio8" required=""> 4 | somewhat agree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio8" required=""> 5 | strongly agree
+                <span class="checkmark"></span>
+            </label>
+            <hr>
+
+            <h6>Q9. I frequently thinking about escaping or going somewhere else.</h6>
+            <label class="container">
+                <input type="radio" checked="checked" name="radio9" required=""> 1 | strongly disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio9" required=""> 2 | somewhat disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio9" required=""> 3 | neutral
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio9" required=""> 4 | somewhat agree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio9" required=""> 5 | strongly agree
+                <span class="checkmark"></span>
+            </label>
+            <hr>
+
+            <h6>Q10. I tell so many lies that they often take on a life of their own.</h6>
+            <label class="container">
+                <input type="radio" checked="checked" name="radio10" required=""> 1 | strongly disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio10" required=""> 2 | somewhat disagree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio10" required=""> 3 | neutral
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio10" required=""> 4 | somewhat agree
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio10" required=""> 5 | strongly agree
+                <span class="checkmark"></span>
+            </label>
+            <hr>
+
+
+
+            <!-- ============================================================================================================ -->
+            <!-- ANOTHER DROPDOWN OPTION -->
+            <!-- <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">1 | strongly disagree</a>
+                  <a href="#">2 | somewhat disagree</a>
+                  <a href="#">3 | neutral</a>
+                  <a href="#">4 | somewhat agree</a>
+                  <a href="#">5 | strongly agree</a>
+                </div>
+              </div> -->
+
+
+            <!-- ============================================================================================================ -->
             <!-- Question 1 -->
-            <label for="input1">Q1. I believe in working hard and earning my own money.</label><br>
+            <!-- <label for="input1">Q1. I believe in working hard and earning my own money.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Select an option
                 </button>
                 <div class="dropdown-menu">
-
-                    <!-- can i do it this way? if i add IDs, can they be used for every question? -->
                     <button class="dropdown-item" type="button" id="one">1 | strongly disagree</button>
                     <button class="dropdown-item" type="button">2 | somewhat disagree</button>
                     <button class="dropdown-item" type="button">3 | neutral</button>
@@ -62,9 +314,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 2 -->
-            <label for="input2">Q2. I often say inappropriate things.</label><br>
+            <!-- <label for="input2">Q2. I often say inappropriate things.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -78,9 +331,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 3 -->
-            <label for="input3">Q3. People consider me young at heart.</label><br>
+            <!-- <label for="input3">Q3. People consider me young at heart.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -94,9 +348,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 4 -->
-            <label for="input4">Q4. I often feel the need to teach people lessons, even if they're harsh
+            <!-- <label for="input4">Q4. I often feel the need to teach people lessons, even if they're harsh
                 ones.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
@@ -111,9 +366,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 5 -->
-            <label for="input5">Q5. I have an appreciation for magic tricks and illusions.</label><br>
+            <!-- <label for="input5">Q5. I have an appreciation for magic tricks and illusions.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -127,9 +383,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 6 -->
-            <label for="input6">Q6. I have a flair for the theatrical.</label><br>
+            <!-- <label for="input6">Q6. I have a flair for the theatrical.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -143,9 +400,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 7 -->
-            <label for="input7">Q7. Other people consider me to be reliable.</label><br>
+            <!-- <label for="input7">Q7. Other people consider me to be reliable.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -159,9 +417,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 8 -->
-            <label for="input8">Q8. I believe family should always come first.</label><br>
+            <!-- <label for="input8">Q8. I believe family should always come first.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -175,9 +434,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 9 -->
-            <label for="input1=9">Q9. I frequently thinking about escaping or going somewhere else.</label><br>
+            <!-- <label for="input1=9">Q9. I frequently thinking about escaping or going somewhere else.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -191,9 +451,10 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
+            <hr> -->
+
             <!-- Question 10 -->
-            <label for="input10">Q10. I tell so many lies that they often take on a life of their own.</label><br>
+            <!-- <label for="input10">Q10. I tell so many lies that they often take on a life of their own.</label><br>
             <div class="btn-group">
                 <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -207,12 +468,14 @@
                     <button class="dropdown-item" type="button">5 | strongly agree</button>
                 </div>
             </div>
-            <hr>
-            <button id="submit-button" class="btn btn-dark" data-toggle="modal" data-target="#modal">Find my new friend!</button>
+            <hr> -->
+
+            <button id="submit-button" class="btn btn-dark" data-toggle="modal" data-target="#modal">Find my new
+                friend!</button>
         </div>
     </div>
 
-    <!-- Modal - FIX -->
+    <!-- Modal template - FIX -->
     <div class="modal fade" id="bestMatchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -224,7 +487,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -238,6 +501,16 @@
 
     <script type="text/javascript">
 
+        function getRadioCheckedValue(radio_name) {
+            var radio = document.forms[0].elements[radio_name];
+            for (var i = 0; i < Radio.length; i++) {
+                if (radio[i].checked) {
+                    return radio[i].value;
+                    //push to newFriendArray?
+                }
+            }
+        }
+
 
         // CAPTURE VALUE OF WITH ON CLICK - NOT WORKING
         $("#submit-button").on("click", function (event) {
@@ -247,18 +520,18 @@
             var newFriend = {
                 name: $("#name-input").val().trim(),
                 photo: $("#pic-input").val().trim(),
-                
+
                 // HOW TO CAPTURE VALUE OF SCORES??
                 // scores: $("#").val().trim(),
             };
-            
+
 
             //   TOGGLE POST ROUTE/SEND THE NEW OBJECT TO THE FRIENDS API
             // $.post("/api/friends", newFriend)
             //     .then(function (data) {
             //         console.log(data);
 
-                });
+        });
         // });
 
 
