@@ -1,12 +1,15 @@
 //LOAD DATA
 
-var friendArray = require("../data/friends.js");
+var friendData = require("../data/friends.js");
 
 module.exports = function(app) {
+ 
+ 
   // Displays all friends
   app.get("/api/friends", function(req, res) {
-    return res.json(friendArray);
+    res.json(friendData);
   });
+
 
   app.post("/api/friends", function(req, res) {
     
@@ -18,13 +21,13 @@ module.exports = function(app) {
 
     var friendDiff = [];
     // for loop that looks at each friend in the friend array
-    for (var i = 0; i < friendArray.length; i++) {
+    for (var i = 0; i < friendData.length; i++) {
       var totalDiff = 0;
       // inner for loop will look at the scores of each friend
       // as we loop through the friend array
-      for (var j = 0; j < friendArray[i].scores.length; j++) {
+      for (var j = 0; j < friendData[i].scores.length; j++) {
         var diff = Math.abs(
-          parseInt(newFriend.scores[j]) - parseInt(friendArray[i].scores[j])
+          parseInt(newFriend.scores[j]) - parseInt(friendData[i].scores[j])
         );
         totalDiff += diff;
       }
@@ -41,18 +44,13 @@ module.exports = function(app) {
     var bestFriendIndex = friendDiff.indexOf(min);
     // that will be the person that answered the question the closest
 
-    var bestFriend = FriendArray[bestFriendIndex];
+    var bestFriend = friendData[bestFriendIndex];
     console.log(bestFriend);
 
   });
 };
 // end of requests
 
-// var newFriend = {
-//   name: "Carmel",
-//   photo: "",
-//   scores: ["2", "3", "2", "4", "3", "3", "2", "1", "3", "5"]
-// };
 
 
 
