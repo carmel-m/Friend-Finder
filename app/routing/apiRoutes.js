@@ -3,12 +3,12 @@ var friendData = require("../data/friends.js");
 module.exports = function(app) {
  
  
-  // Displays all friends
+  // Gets all friends
   app.get("/api/friends", function(req, res) {
     res.json(friendData);
   });
 
-
+   
   app.post("/api/friends", function(req, res) {
     
     // req.body post is equal to the JSON post sent from the user
@@ -43,7 +43,18 @@ module.exports = function(app) {
 
     var bestFriend = friendData[bestFriendIndex];
     console.log(bestFriend.name);
-
   });
+
+
+  // FIX ===============================================
+  app.get("/api/friends", function(req, res) {
+    res.json(bestFriend.name);
+    console.log(bestFriend.name);
+  });
+
+  // app.post("/api/friends", function(req, res) {
+  //   res.json(bestFriend);
+  //   console.log(bestFriend.name);
+  // });
 };
 

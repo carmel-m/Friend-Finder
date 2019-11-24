@@ -339,7 +339,10 @@
 
             console.log(newFriend);
 
+            // FIX ===============================================
             $("#bestMatchModal").modal("show");
+            // $("#modal-body").text(bestFriend.name);
+
 
             //   TOGGLE POST ROUTE/SEND THE NEW OBJECT TO THE FRIENDS API
             $.post("/api/friends", newFriend, function (data) {
@@ -352,10 +355,25 @@
             // $.get("/api/friends", bestFriend, function (data) {
 
             //     console.log(bestFriend);
+            //     $("#bestMatchModal").modal("show");
+            //     $("#modal-body").text(bestFriend.name);
 
             // });
 
+
+            // FIX ===============================================
+            function runBestFriendQuery() {
+                $.ajax({ url: "/api/friends", method: "GET" })
+                    .then(function (bestFriend) {
+                        console.log("Best friend: " + bestFriend);
+
+
+                    })
+            }
+
+            runBestFriendQuery();
         });
+       
 
     </script>
 
