@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
     
-    // req.body hosts is equal to the JSON post sent from the user
+    // req.body post is equal to the JSON post sent from the user
     var newFriend = req.body;
 
     console.log(newFriend);
