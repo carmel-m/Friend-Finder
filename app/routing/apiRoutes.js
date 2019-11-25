@@ -1,21 +1,16 @@
 var friendData = require("../data/friends.js");
 
 module.exports = function(app) {
- 
- 
   // Gets all friends
   app.get("/api/friends", function(req, res) {
     res.json(friendData);
   });
 
-   
   app.post("/api/friends", function(req, res) {
-    
     // req.body post is equal to the JSON post sent from the user
     var newFriend = req.body;
 
     console.log(newFriend);
-    res.json(newFriend);
 
     var friendDiff = [];
     // for loop that looks at each friend in the friend array
@@ -43,18 +38,10 @@ module.exports = function(app) {
 
     var bestFriend = friendData[bestFriendIndex];
     console.log(bestFriend.name);
+  
+    friendData.push(newFriend);
+
+    res.json(bestFriend);
   });
 
-
-  // FIX ===============================================
-  app.get("/api/friends", function(req, res) {
-    res.json(bestFriend.name);
-    console.log(bestFriend.name);
-  });
-
-  // app.post("/api/friends", function(req, res) {
-  //   res.json(bestFriend);
-  //   console.log(bestFriend.name);
-  // });
 };
-
