@@ -296,7 +296,7 @@
         </div>
     </div>
 
-    <!-- Modal template - FIX -->
+    <!-- RESULT MODAL -->
     <div class="modal fade" id="bestMatchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -308,11 +308,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img>
+                    <h5 id="friend-name"></h5>
+                    <img id="image" width="80%" height="80%" src="" />
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
                 </div>
             </div>
         </div>
@@ -335,22 +335,17 @@
                 photo: $("#pic-input").val().trim(),
                 scores: surveyScores
             };
-
             console.log(newFriend);
-
 
             //   TOGGLE POST ROUTE/SEND THE NEW OBJECT TO THE FRIENDS API
             $.post("/api/friends", newFriend, function (data) {
                 console.log(data);
 
                 $("#bestMatchModal").modal("show");
-                $(".modal-body").text(data.name);
-
+                $("#friend-name").text(data.name);
+                $("#image").attr("src", data.photo);
             });
-
         });
-
-
     </script>
 
 </body>

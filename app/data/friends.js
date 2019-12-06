@@ -1,7 +1,7 @@
 var friendArray = [
     {
         "name": "Buster Bluth",
-        "photo": "",
+        "photo": "/images/buster-bluth.jpg",
         "scores": [
             "4", 
             "1", 
@@ -17,7 +17,7 @@ var friendArray = [
     },
     {
         "name": "Lucille Bluth",
-        "photo": "",
+        "photo": "/images/lucille-bluth.jpg",
         "scores": [
             "1", 
             "5", 
@@ -33,7 +33,7 @@ var friendArray = [
     },
     {
         "name": "George Bluth",
-        "photo": "",
+        "photo": "/images/george-bluth-sr",
         "scores": [
             "2", 
             "3", 
@@ -49,7 +49,7 @@ var friendArray = [
     },
     {
         "name": "Michael Bluth",
-        "photo": "",
+        "photo": "/images/michael-bluth.jpg",
         "scores": [
             "5", 
             "2", 
@@ -65,7 +65,7 @@ var friendArray = [
     },
     {
         "name": "George Michael Bluth",
-        "photo": "",
+        "photo": "/images/george-michael-bluth.jpg",
         "scores": [
             "4", 
             "2", 
@@ -81,7 +81,7 @@ var friendArray = [
     },
     {
         "name": "Gob Bluth",
-        "photo": "",
+        "photo": "/images/gob-bluth.jpg",
         "scores": [
             "1", 
             "4", 
@@ -97,7 +97,7 @@ var friendArray = [
     },
     {
         "name": "Tobias Funke",
-        "photo": "",
+        "photo": "/images/tobias-funke.jpg",
         "scores": [
             "3", 
             "5", 
@@ -113,7 +113,7 @@ var friendArray = [
     },
     {
         "name": "Lindsay Bluth Funke",
-        "photo": "",
+        "photo": "/images/lindsay-bluth-funke.jpg",
         "scores": [
             "1", 
             "4", 
@@ -129,7 +129,7 @@ var friendArray = [
     },
     {
         "name": "Maeby Funke",
-        "photo": "",
+        "photo": "/images/maeby-funke",
         "scores": [
             "2", 
             "3", 
